@@ -1,0 +1,6 @@
+com/sabre/ActorDAO.class
+com/sabre/Dao.class
+com/sabre/MyDAOConfig.class
+com/sabre/ActorResource.class
+com/sabre/Actor.class
+com/sabre/MyDAOConfigBinder.class

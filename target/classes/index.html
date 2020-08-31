@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<meta charset="UTF-8">
+<title>Test App </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-route.js"></script> 
+<script src="js/apps.js"></script> 
+
+<body data-ng-app='ActorWebApps' data-ng-controller='HomeController'>
+<div>
+<h1> Title: {{title}} </h1>
+</div>
+
+ Filter: <input type='text' data-ng-model='name'></input>
+<br>
+ The name entered is: <b>{{name}}</b> -->
+ <table>
+            <tr>
+                <th>ID</th>
+                    <th>Actor Name</th>
+                        <th>Nickname</th>
+            </tr>
+  <tr data-ng-repeat ="actor in list | filter:name | orderBy:'id' ">
+  <td>{{actor.id}}</td>
+ <td> {{actor.name}}</td>
+ <td> {{actor.nickname}}</td>
+</tr>
+</table>
+
+</body>
+</html>
